@@ -1,0 +1,6 @@
+{
+  "LA_AREA": ["LAX", "SNA", "ONT", "BUR", "LGB"],
+  "SF_AREA": ["SFO", "SJC", "OAK"],
+  "DEN_AREA": ["DEN"],
+  "NYC_AREA": ["EWR", "JFK", "LGA"]
+}

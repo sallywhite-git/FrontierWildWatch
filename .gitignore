@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+.venv/
+state.json
+state_*.json
+.env
+config.json
+
+# Playwright browser profiles and data
+data/
+
+# Run artifacts
+runs/
+run-report.json
+probe.json
+
+# Test files
+test_*.py
+
+# Handoff materials (not needed in repo)
+anthropic-handoff/
+anthropic-handoff.tar.gz
+
+# macOS
+.DS_Store
+test_mobile_api.py
+replay_search.py
+docs/example_fetch_session.chlz
+
+# Coding Assistants
+.codex/
+.kiro/

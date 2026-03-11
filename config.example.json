@@ -1,0 +1,84 @@
+{
+  "origins": [
+    "SNA"
+  ],
+  "destinations": [
+    "LAS",
+    "DEN"
+  ],
+  "days_ahead_domestic": 1,
+  "days_ahead_international": 10,
+  "search_days": 1,
+  "timezone": {
+    "override": ""
+  },
+  "api": {
+    "base_url": "https://mtier.flyfrontier.com/flightavailabilityssv/FlightAvailabilitySimpleSearch",
+    "method": "POST",
+    "params_template": {},
+    "use_mobile_signing": true,
+    "json_template": {
+      "flightAvailabilityRequestModel": {
+        "passengers": {
+          "types": [
+            {
+              "type": "ADT",
+              "count": 1
+            }
+          ],
+          "residentCountry": "US"
+        },
+        "filters": {
+          "maxConnections": 20,
+          "fareInclusionType": "Default",
+          "type": "All",
+          "includeAllotments": true,
+          "bundleControlFilter": "2"
+        },
+        "codes": {
+          "currencyCode": "USD"
+        },
+        "origin": "{origin}",
+        "destination": "{destination}",
+        "beginDate": "{date}"
+      }
+    },
+    "headers": {
+      "device-id": "cb8i9pLDTzWKeuXuDadR2O",
+      "ocp-apim-subscription-key": "493f95d2aa20409e9094b6ae78c1e5de",
+      "user-agent": "NCPAndroid/3.5.4",
+      "frontiertoken": "6870fb9c0-cbcc-4a49-b2ad-2b133e87e3d92",
+      "x-px-os-version": "16",
+      "x-px-uuid": "1ee1f538-ff40-11f0-a77b-45348a5e92ff",
+      "x-px-authorization": "1",
+      "x-px-device-fp": "d2b77ff2a2b4d96d",
+      "x-px-device-model": "sdk_gphone64_arm64",
+      "x-px-os": "Android",
+      "x-px-hello": "AlZWAlUGAAseVVUHAx4CAlUDHlIEBFEeBwYABwtSBlYKAVVV",
+      "x-px-mobile-sdk-version": "3.4.5"
+    },
+    "timeout_seconds": 20,
+    "retries": 3,
+    "backoff_seconds": 2.0,
+    "min_delay_seconds": 1.0,
+    "max_delay_seconds": 3.0,
+    "date_format": "%Y-%m-%d"
+  },
+  "filters": {
+    "max_stops": 1,
+    "nonstop_only": false
+  },
+  "booking_url_template": "https://www.flyfrontier.com/",
+  "telegram": {
+    "enabled": false,
+    "bot_token_env": "TELEGRAM_BOT_TOKEN",
+    "chat_id_env": "TELEGRAM_CHAT_ID"
+  },
+  "metrics": {
+    "max_run_history": 20,
+    "blocked_cooldown_minutes": 45
+  },
+  "output": {
+    "state_file": "state.json"
+  }
+}
