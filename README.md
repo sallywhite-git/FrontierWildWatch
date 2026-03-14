@@ -1,5 +1,7 @@
 # FrontierWildWatch
 
+> 🤖 **OpenClaw / Claude AI Skill** — Install directly as an AI agent skill. See [`skills/frontier-tracker/SKILL.md`](skills/frontier-tracker/SKILL.md) for setup.
+
 FrontierWildWatch is a high-reliability Frontier Airlines flight search engine that uses a signed mobile API client to bypass anti-bot protections and fetch real-time availability and pricing.
 
 It is specifically designed to work with the **Frontier GoWild! Pass**, highlighting availability and low fares that are often hidden or difficult to find via traditional scrapers.
