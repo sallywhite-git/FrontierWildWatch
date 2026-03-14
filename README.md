@@ -73,3 +73,19 @@ python3 scanner.py --config config.json --probe LAX SFO 2026-02-28
 
 ---
 *Maintained for Frontier Airlines GoWild! enthusiasts.*
+
+## Install as an AI Skill
+
+To use FrontierWildWatch as an **OpenClaw / Claude AI agent skill**, clone directly into your skills directory:
+
+```bash
+git clone https://github.com/sallywhite-git/FrontierWildWatch.git ~/.openclaw/skills/frontier-tracker
+cd ~/.openclaw/skills/frontier-tracker
+python3 setup_config.py
+```
+
+The agent will automatically detect `skills/frontier-tracker/SKILL.md` and expose all scan, probe, and alert commands.
+
+---
+
+**Keywords:** `frontier-airlines` · `gowild-pass` · `gowild-flight-tracker` · `frontier-api` · `flight-alerts` · `travel-hacking` · `openclaw-skill` · `claude-skill` · `ai-agent-skill` · `python` · `telegram-bot` · `mobile-api` · `ecdsa-signing` · `real-time-flights`
